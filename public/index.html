@@ -14,5 +14,20 @@
     PIN: <textarea data-target="clipboard.source" readonly>5678</textarea>
     <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
   <div data-controller="clipboard">
+  <br>
+  <br>
+  <div data-controller="slideshow" data-slideshow-index="1">
+    <button data-action="slideshow#previous">←</button>
+    <button data-action="slideshow#next">→</button>
+    <div data-target="slideshow.slide" class="slide">🐵</div>
+    <div data-target="slideshow.slide" class="slide">🙈</div>
+    <div data-target="slideshow.slide" class="slide">🙉</div>
+    <div data-target="slideshow.slide" class="slide">🙊</div>
+  </div>
+  <br>
+  <br>
+  <div data-controller="content-loader"
+     data-content-loader-url="/messages.html" data-content-loader-refresh-interval="5000">
+  </div>
 </body>
 </html>
